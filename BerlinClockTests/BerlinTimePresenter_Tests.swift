@@ -18,4 +18,12 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertEqual(1, result)
     }
+    
+    func test_ReturnSixty_WhenComponentTwoReceived()  {
+        let berlinTimePresenter = BerlinTimePresenter.init()
+        
+        let result = berlinTimePresenter.numberOfRowsInPickerView(2)
+        
+        XCTAssertEqual(60, result)
+    }
 }

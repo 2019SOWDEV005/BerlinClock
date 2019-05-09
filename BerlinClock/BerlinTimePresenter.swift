@@ -6,6 +6,9 @@ class BerlinTimePresenter {
         else if component == 1 {
             return 1
         }
+        else if component == 2 {
+            return 60
+        }
         return 0
     }
 
