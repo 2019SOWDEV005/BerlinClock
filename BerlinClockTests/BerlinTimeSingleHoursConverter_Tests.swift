@@ -10,4 +10,12 @@ class BerlinTimeSingleHoursConverter_Tests: XCTestCase {
         
         XCTAssertEqual("ROOO", result)
     }
+    
+    func test_BlinkTwoRedLightsInSingleHoursRow_WhenTwoHoursReceived() {
+        let berlinTimeSingleHoursConverter = BerlinTimeSingleHoursConverter.init(DigitalHours.init(2))
+        
+        let result = berlinTimeSingleHoursConverter.asSingleHoursRepresentation()
+        
+        XCTAssertEqual("RROO", result)
+    }
 }
