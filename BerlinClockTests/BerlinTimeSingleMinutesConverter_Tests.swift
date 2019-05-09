@@ -5,7 +5,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
     
     func test_BlinkSingleYellowLightInSingleMinutesRow_WhenSixMinutesReceived()  {
         
-        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(6)
+        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(6))
         
         let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
         
@@ -14,7 +14,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
     
     func test_BlinkTwoYellowLightsInSingleMinutesRow_WhenSevenMinutesReceived()  {
         
-        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(7)
+        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(7))
         
         let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
         
@@ -23,7 +23,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
     
     func test_BlinkThreeYellowLightsInSingleMinutesRow_WhenEightMinutesReceived()  {
         
-        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(8)
+        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(8))
         
         let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
         
@@ -32,7 +32,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
     
     func test_BlinkFourYellowLightsInSingleMinutesRow_WhenNineMinutesReceived()  {
         
-        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(9)
+        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(9))
         
         let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
         
@@ -41,7 +41,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
     
     func test_OffAllLightsInSingleMinutesRow_WhenTenMinutesReceived()  {
         
-        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(10)
+        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(10))
         
         let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
         

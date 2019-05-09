@@ -2,9 +2,9 @@ class BerlinTimeSingleMinutesConverter {
     
     private let numberOfSingleMinutes:Int
     private let maximumNumberOfLights = 4
- 
-    init(_ digitalMinutes:Int) {
-        self.numberOfSingleMinutes = digitalMinutes % 5
+    
+    init(_ digitalMinutes:DigitalMinutes) {
+        self.numberOfSingleMinutes = digitalMinutes.numberOfSingleMinutesValue()
     }
     
     func asSingleMinutesRepresentation() -> String {
