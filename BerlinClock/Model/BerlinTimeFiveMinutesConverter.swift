@@ -2,8 +2,8 @@ class BerlinTimeFiveMinutesConverter {
     private let numberOfFiveMinutes: Int
     private let maximumNumberOfLights = 11
     
-    init(_ digitalMinutes:Int) {
-        self.numberOfFiveMinutes = digitalMinutes / 5
+    init(_ digitalMinutes:DigitalMinutes) {
+        self.numberOfFiveMinutes = digitalMinutes.numberOfFiveMinutesValue()
     }
     
     func asFiveMinutesRepresentation() -> String {
