@@ -1,6 +1,6 @@
 import UIKit
 
-class BerlinTimeConvertorViewController: UIViewController {
+class BerlinTimeViewController: UIViewController {
 
     @IBOutlet weak var txtDigitalTime: UITextField!
     
