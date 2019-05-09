@@ -18,6 +18,7 @@
 		36903C7E2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C7D2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift */; };
 		36903C8122846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C8022846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift */; };
 		36903C8322846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C8222846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift */; };
+		36903C86228477F900334F48 /* BerlinClockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C85228477F900334F48 /* BerlinClockConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		36903C7D2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeSingleMinutesConverter_Tests.swift; sourceTree = "<group>"; };
 		36903C8022846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeFiveMinutesConverter.swift; sourceTree = "<group>"; };
 		36903C8222846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeFiveMinutesConverter_Tests.swift; sourceTree = "<group>"; };
+		36903C85228477F900334F48 /* BerlinClockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				36903C522284640000334F48 /* Assets.xcassets */,
 				36903C542284640000334F48 /* LaunchScreen.storyboard */,
 				36903C572284640000334F48 /* Info.plist */,
+				36903C84228477D100334F48 /* constants */,
 				36903C7F22846E1000334F48 /* Model */,
 			);
 			path = BerlinClock;
@@ -143,6 +146,14 @@
 				36903C8022846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		36903C84228477D100334F48 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				36903C85228477F900334F48 /* BerlinClockConstants.swift */,
+			);
+			path = constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +288,7 @@
 			files = (
 				36903C7A2284649800334F48 /* ViewController.swift in Sources */,
 				36903C8122846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift in Sources */,
+				36903C86228477F900334F48 /* BerlinClockConstants.swift in Sources */,
 				36903C4C2284640000334F48 /* AppDelegate.swift in Sources */,
 				36903C7C228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift in Sources */,
 			);
