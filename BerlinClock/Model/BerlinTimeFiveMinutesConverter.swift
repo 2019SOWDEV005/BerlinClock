@@ -6,7 +6,7 @@ class BerlinTimeFiveMinutesConverter {
         self.numberOfFiveMinutes = digitalMinutes.numberOfFiveMinutesValue()
     }
     
-    func asFiveMinutesRepresentation() -> String {
+    func asBerlinTime() -> String {
         var fiveMinutesRepresentation = ""
         
         guard numberOfFiveMinutes > 0 else {

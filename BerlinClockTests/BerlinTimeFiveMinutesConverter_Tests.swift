@@ -6,7 +6,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkOneYellowLightInFiveMinutesRow_WhenFiveMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(5))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YOOOOOOOOOO", result)
     }
@@ -14,7 +14,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkTwoYellowLightsInFiveMinutesRow_WhenTenMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(10))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYOOOOOOOOO", result)
     }
@@ -22,7 +22,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkTwoYellowLightsAndOneRedLightInFiveMinutesRow_WhenFiftenMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(15))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYROOOOOOOO", result)
     }
@@ -30,7 +30,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkThreeYellowLightsAndOneRedLightInFiveMinutesRow_WhenTwentyMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(20))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYRYOOOOOOO", result)
     }
@@ -38,7 +38,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkFourYellowLightsAndOneRedLightInFiveMinutesRow_WhenTwentyFiveMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(25))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYRYYOOOOOO", result)
     }
@@ -46,7 +46,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkFourYellowLightsAndTwoRedLightsInFiveMinutesRow_WhenThirtyMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(30))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYRYYROOOOO", result)
     }
@@ -54,7 +54,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkFiveYellowLightsAndTwoRedLightsInFiveMinutesRow_WhenThirtyFiveMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(35))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYRYYRYOOOO", result)
     }
@@ -62,7 +62,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkSixYellowLightsAndTwoRedLightsInFiveMinutesRow_WhenFourtyMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(40))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYRYYRYYOOO", result)
     }
@@ -70,7 +70,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkSixYellowLightsAndThreeRedLightsInFiveMinutesRow_WhenFourtyFiveMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(45))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYRYYRYYROO", result)
     }
@@ -78,7 +78,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkSevenYellowLightsAndThreeRedLightsInFiveMinutesRow_WhenFiftyMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(50))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYRYYRYYRYO", result)
     }
@@ -86,7 +86,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_BlinkEightYellowLightsAndThreeRedLightsInFiveMinutesRow_WhenFiftyFiveMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(55))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYRYYRYYRYY", result)
     }
@@ -94,7 +94,7 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
     func test_OffAllLightsInFiveMinutesRow_WhenTwoMinutesReceived() {
         let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(DigitalMinutes.init(2))
         
-        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        let result = berlinTimeFiveMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("OOOOOOOOOOO", result)
     }
