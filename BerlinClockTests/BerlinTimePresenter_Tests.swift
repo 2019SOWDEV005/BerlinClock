@@ -136,6 +136,15 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertEqual(berlinTimeView.berlinTimeValue, berlinTime)
     }
+    
+    func test_ShowBerlinValueAsYRRROROOOYYRYYRYYRYOOOOO_WhenDigitalHourISTwentyThreeHoursFiftyNineMinutesAndFiftyNineSeconds()  {
+        let digitalTime = DigitalTime(hours: 16, minutes: 50, seconds: 06)
+        let berlinTime = BerlinTime.init("Y", "RRRO", "ROOO", "YYRYYRYYRYO", "OOOO")
+        
+        berlinTimePresenter.constructBerlinDigits(digitalTime: digitalTime)
+        
+        XCTAssertEqual(berlinTimeView.berlinTimeValue, berlinTime)
+    }
 }
 
 fileprivate class MockBerlinTimeView:BerlinTimeView {
