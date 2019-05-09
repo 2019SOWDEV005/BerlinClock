@@ -9,8 +9,8 @@ class BerlinTimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createTimePicker()
         berlinTimePresenter = BerlinTimePresenter()
+        createTimePicker()
     }
     
     private func createTimePicker() {
@@ -20,7 +20,7 @@ class BerlinTimeViewController: UIViewController {
     }
 }
 
-extension BerlinTimeViewController:UIPickerViewDelegate {
+extension BerlinTimeViewController:UIPickerViewDelegate,UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 6
     }
@@ -34,7 +34,7 @@ extension BerlinTimeViewController:UIPickerViewDelegate {
      }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return nil
+        return berlinTimePresenter.titleForRowPickerView(component, row)
     }
 }
 
