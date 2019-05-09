@@ -102,6 +102,14 @@ class BerlinTimePresenter_Tests: XCTestCase {
         XCTAssertEqual("Sec", result)
     }
     
+    func test_ReturnNil_WhenComponentSixReceived()  {
+        let rowValue = 02
+        
+        let result = berlinTimePresenter.titleForRowPickerView(6, rowValue)
+        
+        XCTAssertNil(result)
+    }
+    
     func test_ShowValidDigitalTime_WhenUserSelectedTimeInPicker()  {
         let digitalTime = DigitalTime(hours: 01, minutes: 02, seconds: 03)
         
