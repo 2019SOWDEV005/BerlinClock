@@ -88,7 +88,6 @@ class BerlinTimePresenter_Tests: XCTestCase {
         XCTAssertEqual("02", result)
     }
     
-    
     func test_ReturnSEC_WhenComponentFiveReceived()  {
         let rowValue = 02
         
@@ -97,7 +96,6 @@ class BerlinTimePresenter_Tests: XCTestCase {
         XCTAssertEqual("Sec", result)
     }
     
-    
     func test_ShowValidDigitalTime_WhenUserSelectedTimeInPicker()  {
         let digitalTime = DigitalTime(hours: 01, minutes: 02, seconds: 03)
         
@@ -105,14 +103,26 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertEqual("01:02:03", berlinTimeView.getDigitalTime())
     }
+    
+    func test_ShowInvalidInputError_WhenUserNilValueIsReceived()  {
+        
+        berlinTimePresenter.constructBerlinDigits(digitalTime: nil)
+        
+        XCTAssertTrue (berlinTimeView.invalidInputErrorShown)
+    }
 }
 
 fileprivate class MockBerlinTimeView:BerlinTimeView {
     
     private var digitalTime:String?
+    fileprivate var invalidInputErrorShown = false
     
     func showDigitalTime(digitalTime: String) {
         self.digitalTime = digitalTime
+    }
+    
+    func showInvalidInputError() {
+        invalidInputErrorShown = true
     }
     
     func getDigitalTime() -> String {

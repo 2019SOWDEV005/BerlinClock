@@ -28,6 +28,14 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
         txtDigitalTime.text = digitalTime
     }
     
+    func showInvalidInputError() {
+        let InvalidInputError = UIAlertController(title: "Error", message: "Please provide valid input", preferredStyle: UIAlertController.Style.alert)
+        
+        InvalidInputError.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
+        self.present(InvalidInputError, animated: true, completion: nil)
+    }
+    
     private func createTimePicker() {
         let timePicker = UIPickerView()
         timePicker.delegate = self
@@ -54,7 +62,7 @@ extension BerlinTimeViewController:UIPickerViewDelegate,UIPickerViewDataSource {
         
         berlinTimePresenter.constructDigitalTime(digitalTime!)
         
-     }
+    }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return berlinTimePresenter.titleForRowPickerView(component, row)

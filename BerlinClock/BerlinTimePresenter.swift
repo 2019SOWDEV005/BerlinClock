@@ -1,6 +1,7 @@
 protocol BerlinTimeView {
     func showDigitalTime(digitalTime:String)
- }
+    func showInvalidInputError()
+}
 
 class BerlinTimePresenter {
     private let berlinTimeView: BerlinTimeView
@@ -45,4 +46,12 @@ class BerlinTimePresenter {
         let digitalTime = String(format: "%02d:%02d:%02d",digitalHours.value(),digitalMinutes.value(),digitalSeconds.value())
         berlinTimeView.showDigitalTime(digitalTime: digitalTime)
     }
+    
+    func constructBerlinDigits(digitalTime:DigitalTime?) {
+        guard let digitalTimeValue = digitalTime else {
+            berlinTimeView.showInvalidInputError()
+            return
+        }
+    }
+    
 }
