@@ -11,4 +11,13 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
         
         XCTAssertEqual("YOOO", result)
     }
+    
+    func test_BlinkTwoYellowLightsInSingleMinutesRow_WhenSevenMinutesReceived()  {
+        
+        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(7)
+        
+        let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
+        
+        XCTAssertEqual("YYOO", result)
+    }
 }
