@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class BerlinTimeConvertorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
