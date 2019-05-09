@@ -89,6 +89,7 @@ class BerlinTimePresenter {
     }
     
     private func getSecondsBerlineValue(_ digitalSeconds:DigitalSeconds) ->String {
-    return ""
+        let berlinTimeSecondsConverter = BerlinTimeSecondsConverter.init(digitalSeconds)
+        return berlinTimeSecondsConverter.asBerlinTime()
     }
 }

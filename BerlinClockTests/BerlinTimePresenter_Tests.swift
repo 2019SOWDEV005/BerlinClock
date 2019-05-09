@@ -118,11 +118,22 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertTrue (berlinTimeView.berlinTimeShown)
     }
+    
+    func test_ShowBerlinValueAsYOOOOOOOOOOOOOOOOOOOOOOO_WhenDigitalHourISZeroHoursZeroMinutesAndZeroSeconds()  {
+        let digitalTime = DigitalTime(hours: 00, minutes: 00, seconds: 00)
+        let berlinTime = BerlinTime.init("Y", "OOOO", "OOOO", "OOOOOOOOOOO", "OOOO")
+        
+        berlinTimePresenter.constructBerlinDigits(digitalTime: digitalTime)
+        
+        XCTAssertEqual(berlinTimeView.berlinTimeValue, berlinTime)
+    }
 }
 
 fileprivate class MockBerlinTimeView:BerlinTimeView {
     
     private var digitalTime:String?
+    fileprivate var berlinTimeValue:BerlinTime?
+    
     fileprivate var invalidInputErrorShown = false
     fileprivate var berlinTimeShown = false
     
@@ -143,5 +154,6 @@ fileprivate class MockBerlinTimeView:BerlinTimeView {
     
     func showBerlinTime(berlinTime: BerlinTime) {
         berlinTimeShown = true
+        berlinTimeValue = berlinTime
     }
 }
