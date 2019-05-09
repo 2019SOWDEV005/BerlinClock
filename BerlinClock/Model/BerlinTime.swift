@@ -5,11 +5,11 @@ class BerlinTime {
     let fiveMinuteRowValue:String
     let singleMinuteRowValue:String
     
-    init(secondsRowValue:String,
-         fiveHoursRowValue:String,
-         singleHoursRowValue:String,
-         fiveMinuteRowValue:String,
-         singleMinuteRowValue:String) {
+    init(_ secondsRowValue:String,
+         _ fiveHoursRowValue:String,
+         _ singleHoursRowValue:String,
+         _ fiveMinuteRowValue:String,
+         _ singleMinuteRowValue:String) {
         self.secondsRowValue = secondsRowValue
         self.fiveHoursRowValue = fiveHoursRowValue
         self.singleHoursRowValue = singleHoursRowValue

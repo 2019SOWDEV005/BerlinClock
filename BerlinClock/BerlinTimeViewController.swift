@@ -36,6 +36,9 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
         self.present(InvalidInputError, animated: true, completion: nil)
     }
     
+     func showBerlinTime(berlinTime: BerlinTime) {
+    }
+    
     private func createTimePicker() {
         let timePicker = UIPickerView()
         timePicker.delegate = self

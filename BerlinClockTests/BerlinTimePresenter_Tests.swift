@@ -110,12 +110,21 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertTrue (berlinTimeView.invalidInputErrorShown)
     }
+    
+    func test_ShowBerlinValue_WhenBerlinValuesConstructedFromDigitalValue()  {
+        let digitalTime = DigitalTime(hours: 01, minutes: 02, seconds: 03)
+        
+        berlinTimePresenter.constructBerlinDigits(digitalTime: digitalTime)
+        
+        XCTAssertTrue (berlinTimeView.berlinTimeShown)
+    }
 }
 
 fileprivate class MockBerlinTimeView:BerlinTimeView {
     
     private var digitalTime:String?
     fileprivate var invalidInputErrorShown = false
+    fileprivate var berlinTimeShown = false
     
     func showDigitalTime(digitalTime: String) {
         self.digitalTime = digitalTime
@@ -130,5 +139,9 @@ fileprivate class MockBerlinTimeView:BerlinTimeView {
             return ""
         }
         return digitalValue
+    }
+    
+    func showBerlinTime(berlinTime: BerlinTime) {
+        berlinTimeShown = true
     }
 }

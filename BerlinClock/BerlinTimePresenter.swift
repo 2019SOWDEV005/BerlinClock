@@ -1,6 +1,7 @@
 protocol BerlinTimeView {
     func showDigitalTime(digitalTime:String)
     func showInvalidInputError()
+    func showBerlinTime(berlinTime:BerlinTime)
 }
 
 class BerlinTimePresenter {
@@ -48,10 +49,46 @@ class BerlinTimePresenter {
     }
     
     func constructBerlinDigits(digitalTime:DigitalTime?) {
-        guard let digitalTimeValue = digitalTime else {
+        guard let time = digitalTime else {
             berlinTimeView.showInvalidInputError()
             return
         }
+        let secondsRowValue = getSecondsBerlineValue(time.secondsValue())
+        let fiveHoursRowValue = getFiveHoursBerlineValue(time.hoursValue())
+        let singleHoursRowValue = getSingleHoursBerlineValue(time.hoursValue())
+        let fiveMinuteRowValue = getFiveMinutesBerlinValue(time.minutesValue())
+        let singleMinuteRowValue = getSingleMinutesBerlinValue(time.minutesValue())
+        
+        let berlinTime = BerlinTime.init(secondsRowValue ,
+                                         fiveHoursRowValue,
+                                          singleHoursRowValue,
+                                         fiveMinuteRowValue,
+                                         singleMinuteRowValue)
+        
+        berlinTimeView.showBerlinTime(berlinTime:berlinTime)
     }
     
+    private func getSingleMinutesBerlinValue(_ digitalMinutes:DigitalMinutes) ->String {
+        let singleMinutesConverter = BerlinTimeSingleMinutesConverter.init(digitalMinutes)
+        return singleMinutesConverter.asBerlinTime()
+    }
+    
+    private func getFiveMinutesBerlinValue(_ digitalMinutes:DigitalMinutes) -> String {
+        let fiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(digitalMinutes)
+        return fiveMinutesConverter.asBerlinTime()
+    }
+    
+    private func getSingleHoursBerlineValue(_ digitalHours:DigitalHours) ->String {
+        let singleHoursConverter = BerlinTimeSingleHoursConverter.init(digitalHours)
+        return singleHoursConverter.asBerlinTime()
+    }
+    
+    private func getFiveHoursBerlineValue(_ digitalHours:DigitalHours) ->String {
+        let fiveHoursConverter = BerlinTimeFiveHoursConverter.init(digitalHours)
+        return fiveHoursConverter.asBerlinTime()
+    }
+    
+    private func getSecondsBerlineValue(_ digitalSeconds:DigitalSeconds) ->String {
+    return ""
+    }
 }
