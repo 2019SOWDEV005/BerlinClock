@@ -6,7 +6,9 @@ class BerlinTimePresenter_Tests: XCTestCase {
     private var berlinTimePresenter:BerlinTimePresenter!
     
     override func setUp() {
-        berlinTimePresenter = BerlinTimePresenter.init()
+        let berlinTimeView = MockBerlinTimeView()
+        
+        berlinTimePresenter = BerlinTimePresenter(berlinTimeView)
     }
     
     func test_ReturnTwentyFive_WhenComponentZeroReceived()  {
@@ -92,5 +94,11 @@ class BerlinTimePresenter_Tests: XCTestCase {
         let result = berlinTimePresenter.titleForRowPickerView(5, rowValue)
         
         XCTAssertEqual("Sec", result)
+    }
+}
+
+fileprivate class MockBerlinTimeView:BerlinTimeView {
+    func showDigitalTime(digitalTime: String) {
+        
     }
 }

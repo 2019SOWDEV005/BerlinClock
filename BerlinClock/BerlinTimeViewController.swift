@@ -1,6 +1,6 @@
 import UIKit
 
-class BerlinTimeViewController: UIViewController {
+class BerlinTimeViewController: UIViewController, BerlinTimeView {
     
     @IBOutlet weak var txtDigitalTime: UITextField!
     
@@ -17,11 +17,15 @@ class BerlinTimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        berlinTimePresenter = BerlinTimePresenter()
+        berlinTimePresenter = BerlinTimePresenter(self)
         createTimePicker()
     }
     
     @IBAction func showBerlinTimeClicked(_ sender: Any) {
+    }
+    
+    func showDigitalTime(digitalTime: String) {
+        
     }
     
     private func createTimePicker() {

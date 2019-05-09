@@ -1,4 +1,13 @@
+protocol BerlinTimeView {
+    func showDigitalTime(digitalTime:String)
+ }
+
 class BerlinTimePresenter {
+    private let berlinTimeView: BerlinTimeView
+    
+    init(_ berlinTimeView:BerlinTimeView) {
+        self.berlinTimeView = berlinTimeView
+    }
     
     func numberOfRowsInPickerView(_ component: Int) -> Int {
         switch (component) {
