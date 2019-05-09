@@ -13,6 +13,8 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
     private var digitalTime:DigitalTime?
     
     private var berlinTimePresenter:BerlinTimePresenter!
+    private let redLightIndicator:Character = "R"
+    private let yellowLightIndicator:Character = "Y"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,7 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
     }
     
     @IBAction func showBerlinTimeClicked(_ sender: Any) {
+        berlinTimePresenter.constructBerlinDigits(digitalTime: digitalTime)
     }
     
     func showDigitalTime(digitalTime: String) {
@@ -37,6 +40,48 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
     }
     
      func showBerlinTime(berlinTime: BerlinTime) {
+        updateBerlinClockLights(imageCollection: singleMinutesLights, lightIndication: berlinTime.singleMinuteRowValue)
+        updateBerlinClockLights(imageCollection: fiveMinutesLights, lightIndication: berlinTime.fiveMinuteRowValue)
+        
+        updateBerlinClockLights(imageCollection: singleHoursLights, lightIndication: berlinTime.singleHoursRowValue)
+        updateBerlinClockLights(imageCollection: fiveHoursLights, lightIndication: berlinTime.fiveHoursRowValue)
+        updateBerlinClockLights(imageCollection: secondsLight, lightIndication: berlinTime.secondsRowValue)
+    }
+    
+    func updateBerlinClockLights(imageCollection:[UIImageView], lightIndication:String )  {
+        let characters = Array(lightIndication)
+        for i in (0...imageCollection.count - 1) {
+            
+            if characters[i] == redLightIndicator {
+                imageCollection[i].backgroundColor = UIColor.red
+            }
+                
+            else if characters[i] == yellowLightIndicator {
+                BlinkYellowLight(imageCollection, i)
+            }
+                
+            else {
+                lightOffState(imageCollection, i)
+            }
+        }
+    }
+    
+    private func BlinkYellowLight(_ imageCollection: [UIImageView], _ i: Int) {
+        imageCollection[i].backgroundColor = UIColor.yellow
+        
+        setBlackBorderForImageView(imageCollection, i)
+    }
+
+    private func lightOffState(_ imageCollection: [UIImageView], _ i: Int) {
+        imageCollection[i].backgroundColor = UIColor.gray
+        
+        setBlackBorderForImageView(imageCollection, i)
+    }
+    
+    private func setBlackBorderForImageView(_ imageCollection: [UIImageView], _ i: Int) {
+        imageCollection[i].layer.borderWidth = 2
+        
+        imageCollection[i].layer.borderColor = UIColor.black.cgColor
     }
     
     private func createTimePicker() {
