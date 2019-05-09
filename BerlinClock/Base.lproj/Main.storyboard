@@ -27,12 +27,28 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="szu-5f-zVJ"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeN-dg-d7y">
+                                <rect key="frame" x="16" y="134" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.24194015120000001" green="0.18353623820000001" blue="0.89088277279999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NUj-Gb-Cwi"/>
+                                </constraints>
+                                <state key="normal" title="Show Berlin Time">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBerlinTimeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="244-aX-0St"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ppr-v0-z4z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="4lJ-OA-a7L"/>
+                            <constraint firstItem="HeN-dg-d7y" firstAttribute="top" secondItem="ppr-v0-z4z" secondAttribute="bottom" constant="34" id="Bj7-uf-6cd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HeN-dg-d7y" secondAttribute="trailing" constant="16" id="P2t-Qv-MWv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ppr-v0-z4z" secondAttribute="trailing" constant="16" id="arC-KQ-ltC"/>
                             <constraint firstItem="ppr-v0-z4z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eEQ-qu-IgZ"/>
+                            <constraint firstItem="HeN-dg-d7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="y2g-VZ-ebC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

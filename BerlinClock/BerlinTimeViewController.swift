@@ -13,6 +13,9 @@ class BerlinTimeViewController: UIViewController {
         createTimePicker()
     }
     
+    @IBAction func showBerlinTimeClicked(_ sender: Any) {
+    }
+    
     private func createTimePicker() {
         let timePicker = UIPickerView()
         timePicker.delegate = self
