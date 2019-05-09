@@ -31,6 +31,7 @@
 		36903C9C2284C33500334F48 /* DigitalSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C9B2284C33500334F48 /* DigitalSeconds.swift */; };
 		36903C9E2284CE3A00334F48 /* BerlinTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C9D2284CE3A00334F48 /* BerlinTime.swift */; };
 		36903CA02284DA5600334F48 /* BerlinTimeSecondsConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C9F2284DA5600334F48 /* BerlinTimeSecondsConverter.swift */; };
+		36903CA22284DB5200334F48 /* BerlinTimeSecondsConverter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903CA12284DB5200334F48 /* BerlinTimeSecondsConverter_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		36903C9B2284C33500334F48 /* DigitalSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalSeconds.swift; sourceTree = "<group>"; };
 		36903C9D2284CE3A00334F48 /* BerlinTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTime.swift; sourceTree = "<group>"; };
 		36903C9F2284DA5600334F48 /* BerlinTimeSecondsConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeSecondsConverter.swift; sourceTree = "<group>"; };
+		36903CA12284DB5200334F48 /* BerlinTimeSecondsConverter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeSecondsConverter_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				36903C8D228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift */,
 				36903C9122848C8B00334F48 /* BerlinTimeFiveHoursConverter_Tests.swift */,
 				36903C972284A83500334F48 /* BerlinTimePresenter_Tests.swift */,
+				36903CA12284DB5200334F48 /* BerlinTimeSecondsConverter_Tests.swift */,
 			);
 			path = BerlinClockTests;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				36903C8322846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift in Sources */,
 				36903C8E228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift in Sources */,
 				36903C982284A83500334F48 /* BerlinTimePresenter_Tests.swift in Sources */,
+				36903CA22284DB5200334F48 /* BerlinTimeSecondsConverter_Tests.swift in Sources */,
 				36903C612284640100334F48 /* BerlinClockTests.swift in Sources */,
 				36903C7E2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift in Sources */,
 			);
