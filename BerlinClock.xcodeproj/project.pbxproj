@@ -28,6 +28,7 @@
 		36903C962284A1A800334F48 /* BerlinTimePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C952284A1A800334F48 /* BerlinTimePresenter.swift */; };
 		36903C982284A83500334F48 /* BerlinTimePresenter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C972284A83500334F48 /* BerlinTimePresenter_Tests.swift */; };
 		36903C9A2284C24800334F48 /* DigitalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C992284C24800334F48 /* DigitalTime.swift */; };
+		36903C9C2284C33500334F48 /* DigitalSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C9B2284C33500334F48 /* DigitalSeconds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		36903C952284A1A800334F48 /* BerlinTimePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BerlinTimePresenter.swift; sourceTree = "<group>"; };
 		36903C972284A83500334F48 /* BerlinTimePresenter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimePresenter_Tests.swift; sourceTree = "<group>"; };
 		36903C992284C24800334F48 /* DigitalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalTime.swift; sourceTree = "<group>"; };
+		36903C9B2284C33500334F48 /* DigitalSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalSeconds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				36903C8722847B0F00334F48 /* DigitalMinutes.swift */,
 				36903C892284812000334F48 /* DigitalHours.swift */,
 				36903C992284C24800334F48 /* DigitalTime.swift */,
+				36903C9B2284C33500334F48 /* DigitalSeconds.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				36903C962284A1A800334F48 /* BerlinTimePresenter.swift in Sources */,
 				36903C8C2284825900334F48 /* BerlinTimeSingleHoursConverter.swift in Sources */,
 				36903C8822847B0F00334F48 /* DigitalMinutes.swift in Sources */,
+				36903C9C2284C33500334F48 /* DigitalSeconds.swift in Sources */,
 				36903C7C228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift in Sources */,
 				36903C9A2284C24800334F48 /* DigitalTime.swift in Sources */,
 				36903C9022848B8D00334F48 /* BerlinTimeFiveHoursConverter.swift in Sources */,
