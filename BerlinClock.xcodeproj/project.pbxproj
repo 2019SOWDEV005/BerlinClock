@@ -153,9 +153,9 @@
 			children = (
 				36903C7B228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift */,
 				36903C8022846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift */,
+				36903C8B2284825900334F48 /* BerlinTimeSingleHoursConverter.swift */,
 				36903C8722847B0F00334F48 /* DigitalMinutes.swift */,
 				36903C892284812000334F48 /* DigitalHours.swift */,
-				36903C8B2284825900334F48 /* BerlinTimeSingleHoursConverter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
