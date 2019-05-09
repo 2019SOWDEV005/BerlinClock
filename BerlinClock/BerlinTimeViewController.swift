@@ -21,6 +21,7 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
         
         berlinTimePresenter = BerlinTimePresenter(self)
         createTimePicker()
+        addToolBarForTimePickerView()
     }
     
     @IBAction func showBerlinTimeClicked(_ sender: Any) {
@@ -88,6 +89,17 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
         let timePicker = UIPickerView()
         timePicker.delegate = self
         txtDigitalTime.inputView = timePicker
+    }
+    
+    private func addToolBarForTimePickerView() {
+        let toolbar = UIToolbar(frame:CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        toolbar.items = [
+            UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneButtonSelected))]
+        txtDigitalTime.inputAccessoryView = toolbar
+    }
+    
+    @objc func doneButtonSelected() {
+        txtDigitalTime.resignFirstResponder()
     }
 }
 
