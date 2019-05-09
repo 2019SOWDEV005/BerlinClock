@@ -2,9 +2,7 @@ class BerlinTimeSingleMinutesConverter {
     
     private let numberOfSingleMinutes:Int
     private let maximumNumberOfLights = 4
-    private let yellowLightRepresentation = "Y"
-    private let lightOffRepresentation = "O"
-    
+ 
     init(_ digitalMinutes:Int) {
         self.numberOfSingleMinutes = digitalMinutes % 5
     }
@@ -13,8 +11,8 @@ class BerlinTimeSingleMinutesConverter {
         
         var  singleMinutesRepresentation = ""
         
-        singleMinutesRepresentation = singleMinutesRepresentation.padding(toLength: numberOfSingleMinutes, withPad:yellowLightRepresentation, startingAt: 0)
+        singleMinutesRepresentation = singleMinutesRepresentation.padding(toLength: numberOfSingleMinutes, withPad:LightIndicator.asStringValue(.Yellow), startingAt: 0)
         
-        return  singleMinutesRepresentation.padding(toLength: maximumNumberOfLights, withPad: lightOffRepresentation, startingAt: 0)
+        return  singleMinutesRepresentation.padding(toLength: maximumNumberOfLights, withPad: LightIndicator.asStringValue(.Off), startingAt: 0)
     }
 }
