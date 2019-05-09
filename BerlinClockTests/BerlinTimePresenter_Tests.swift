@@ -45,11 +45,12 @@ class BerlinTimePresenter_Tests: XCTestCase {
         XCTAssertEqual(1, result)
     }
     
-    func test_ReturnRowValue_WhenComponentOneReceived()  {
+    func test_ReturnRowValue_WhenComponentZeroReceived()  {
         let rowValue = 02
         
         let result = berlinTimePresenter.titleForRowPickerView(0, rowValue)
         
         XCTAssertEqual("02", result)
     }
+
 }
