@@ -24,6 +24,7 @@
 		36903C8C2284825900334F48 /* BerlinTimeSingleHoursConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C8B2284825900334F48 /* BerlinTimeSingleHoursConverter.swift */; };
 		36903C8E228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C8D228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift */; };
 		36903C9022848B8D00334F48 /* BerlinTimeFiveHoursConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C8F22848B8C00334F48 /* BerlinTimeFiveHoursConverter.swift */; };
+		36903C9222848C8B00334F48 /* BerlinTimeFiveHoursConverter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C9122848C8B00334F48 /* BerlinTimeFiveHoursConverter_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		36903C8B2284825900334F48 /* BerlinTimeSingleHoursConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeSingleHoursConverter.swift; sourceTree = "<group>"; };
 		36903C8D228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeSingleHoursConverter_Tests.swift; sourceTree = "<group>"; };
 		36903C8F22848B8C00334F48 /* BerlinTimeFiveHoursConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeFiveHoursConverter.swift; sourceTree = "<group>"; };
+		36903C9122848C8B00334F48 /* BerlinTimeFiveHoursConverter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeFiveHoursConverter_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				36903C7D2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift */,
 				36903C8222846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift */,
 				36903C8D228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift */,
+				36903C9122848C8B00334F48 /* BerlinTimeFiveHoursConverter_Tests.swift */,
 			);
 			path = BerlinClockTests;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36903C9222848C8B00334F48 /* BerlinTimeFiveHoursConverter_Tests.swift in Sources */,
 				36903C8322846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift in Sources */,
 				36903C8E228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift in Sources */,
 				36903C612284640100334F48 /* BerlinClockTests.swift in Sources */,
