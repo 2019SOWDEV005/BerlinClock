@@ -2,4 +2,12 @@ import XCTest
 @testable import BerlinClock
 
 class BerlinTimeSingleHoursConverter_Tests: XCTestCase {
+    
+    func test_BlinkOneRedLightInSingleHoursRow_WhenOneHourReceived() {
+        let berlinTimeSingleHoursConverter = BerlinTimeSingleHoursConverter.init(DigitalHours.init(1))
+        
+        let result = berlinTimeSingleHoursConverter.asSingleHoursRepresentation()
+        
+        XCTAssertEqual("ROOO", result)
+    }
 }
