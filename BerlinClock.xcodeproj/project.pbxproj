@@ -16,6 +16,7 @@
 		36903C7A2284649800334F48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C792284649800334F48 /* ViewController.swift */; };
 		36903C7C228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C7B228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift */; };
 		36903C7E2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C7D2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift */; };
+		36903C8122846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C8022846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		36903C792284649800334F48 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36903C7B228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeSingleMinutesConverter.swift; sourceTree = "<group>"; };
 		36903C7D2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeSingleMinutesConverter_Tests.swift; sourceTree = "<group>"; };
+		36903C8022846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeFiveMinutesConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				36903C7B228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift */,
+				36903C8022846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36903C7A2284649800334F48 /* ViewController.swift in Sources */,
+				36903C8122846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift in Sources */,
 				36903C4C2284640000334F48 /* AppDelegate.swift in Sources */,
 				36903C7C228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift in Sources */,
 			);
