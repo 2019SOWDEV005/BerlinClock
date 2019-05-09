@@ -15,7 +15,7 @@ class BerlinTimePresenter {
     
     func titleForRowPickerView(_ component: Int, _ row: Int) -> String? {
         switch component {
-        case 0,2:
+        case 0,2,4:
             return String(format: "%02d", row)
         case 1:
             return "HR"
