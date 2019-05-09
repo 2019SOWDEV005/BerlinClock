@@ -12,4 +12,11 @@ class BerlinTimePresenter {
             return 0
         }
     }
+    
+    func titleForRowPickerView(_ component: Int, _ row: Int) -> String? {
+        if component == 0 {
+            return String(format: "%02d", row)
+        }
+        return nil
+    }
 }
