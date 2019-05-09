@@ -17,6 +17,9 @@ class BerlinTimePresenter {
         if component == 0 {
             return String(format: "%02d", row)
         }
+        else if component == 1 {
+            return "HR"
+        }
         return nil
     }
 }
