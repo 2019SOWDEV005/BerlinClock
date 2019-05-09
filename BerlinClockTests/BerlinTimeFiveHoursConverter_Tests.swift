@@ -26,4 +26,12 @@ class BerlinTimeFiveHoursConverter_Tests: XCTestCase {
         
         XCTAssertEqual("RRRO", result)
     }
+    
+    func test_BlinkFourRedLightsInFiveHoursRow_WhenTwentyHoursReceived() {
+        let berlinTimeFiveHoursConverter = BerlinTimeFiveHoursConverter.init(DigitalHours.init(20))
+        
+        let result = berlinTimeFiveHoursConverter.asBerlinTime()
+        
+        XCTAssertEqual("RRRR", result)
+    }
 }
