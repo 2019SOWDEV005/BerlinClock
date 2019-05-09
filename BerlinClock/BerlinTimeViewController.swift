@@ -4,9 +4,13 @@ class BerlinTimeViewController: UIViewController {
     
     @IBOutlet weak var txtDigitalTime: UITextField!
     
+    private var berlinTimePresenter:BerlinTimePresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         createTimePicker()
+        berlinTimePresenter = BerlinTimePresenter()
     }
     
     private func createTimePicker() {
@@ -18,7 +22,7 @@ class BerlinTimeViewController: UIViewController {
 
 extension BerlinTimeViewController:UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 0
+        return 6
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
