@@ -38,4 +38,10 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertEqual(60, result)
     }
+    
+    func test_ReturnOne_WhenComponentFiveReceived()  {
+        let result = berlinTimePresenter.numberOfRowsInPickerView(5)
+        
+        XCTAssertEqual(1, result)
+    }
 }
