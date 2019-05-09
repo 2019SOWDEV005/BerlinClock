@@ -20,6 +20,7 @@
 		36903C8322846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C8222846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift */; };
 		36903C86228477F900334F48 /* BerlinClockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C85228477F900334F48 /* BerlinClockConstants.swift */; };
 		36903C8822847B0F00334F48 /* DigitalMinutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C8722847B0F00334F48 /* DigitalMinutes.swift */; };
+		36903C8A2284812000334F48 /* DigitalHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C892284812000334F48 /* DigitalHours.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		36903C8222846F6C00334F48 /* BerlinTimeFiveMinutesConverter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeFiveMinutesConverter_Tests.swift; sourceTree = "<group>"; };
 		36903C85228477F900334F48 /* BerlinClockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockConstants.swift; sourceTree = "<group>"; };
 		36903C8722847B0F00334F48 /* DigitalMinutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalMinutes.swift; sourceTree = "<group>"; };
+		36903C892284812000334F48 /* DigitalHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalHours.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				36903C7B228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift */,
 				36903C8022846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift */,
 				36903C8722847B0F00334F48 /* DigitalMinutes.swift */,
+				36903C892284812000334F48 /* DigitalHours.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				36903C7A2284649800334F48 /* ViewController.swift in Sources */,
 				36903C8122846EA100334F48 /* BerlinTimeFiveMinutesConverter.swift in Sources */,
+				36903C8A2284812000334F48 /* DigitalHours.swift in Sources */,
 				36903C86228477F900334F48 /* BerlinClockConstants.swift in Sources */,
 				36903C4C2284640000334F48 /* AppDelegate.swift in Sources */,
 				36903C8822847B0F00334F48 /* DigitalMinutes.swift in Sources */,
