@@ -38,4 +38,13 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
         
         XCTAssertEqual("YYYY", result)
     }
+    
+    func test_OffAllLightsInSingleMinutesRow_WhenTenMinutesReceived()  {
+        
+        let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(10)
+        
+        let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
+        
+        XCTAssertEqual("OOOO", result)
+    }
 }
