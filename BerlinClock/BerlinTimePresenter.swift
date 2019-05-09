@@ -19,6 +19,8 @@ class BerlinTimePresenter {
             return String(format: "%02d", row)
         case 1:
             return "HR"
+        case 3:
+            return "Min"
         default:
             return nil
         }

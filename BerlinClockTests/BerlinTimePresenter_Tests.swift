@@ -68,4 +68,12 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertEqual("02", result)
     }
+    
+    func test_ReturnMIN_WhenComponentThreeReceived()  {
+        let rowValue = 02
+        
+        let result = berlinTimePresenter.titleForRowPickerView(3, rowValue)
+        
+        XCTAssertEqual("Min", result)
+    }
 }
