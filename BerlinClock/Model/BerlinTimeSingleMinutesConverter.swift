@@ -7,7 +7,7 @@ class BerlinTimeSingleMinutesConverter {
         self.numberOfSingleMinutes = digitalMinutes.numberOfSingleMinutesValue()
     }
     
-    func asSingleMinutesRepresentation() -> String {
+    func asBerlinTime() -> String {
         
         var  singleMinutesRepresentation = ""
         

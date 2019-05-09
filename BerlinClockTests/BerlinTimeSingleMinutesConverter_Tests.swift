@@ -7,7 +7,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
         
         let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(6))
         
-        let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
+        let result = berlinTimeSingleMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YOOO", result)
     }
@@ -16,7 +16,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
         
         let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(7))
         
-        let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
+        let result = berlinTimeSingleMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYOO", result)
     }
@@ -25,7 +25,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
         
         let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(8))
         
-        let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
+        let result = berlinTimeSingleMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYYO", result)
     }
@@ -34,7 +34,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
         
         let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(9))
         
-        let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
+        let result = berlinTimeSingleMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("YYYY", result)
     }
@@ -43,7 +43,7 @@ class BerlinTimeSingleMinutesConverter_Tests: XCTestCase {
         
         let berlinTimeSingleMinutesConverter = BerlinTimeSingleMinutesConverter.init(DigitalMinutes.init(10))
         
-        let result = berlinTimeSingleMinutesConverter.asSingleMinutesRepresentation()
+        let result = berlinTimeSingleMinutesConverter.asBerlinTime()
         
         XCTAssertEqual("OOOO", result)
     }
