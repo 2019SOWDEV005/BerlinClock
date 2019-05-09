@@ -1,24 +1,15 @@
 class BerlinTimePresenter {
+    
     func numberOfRowsInPickerView(_ component: Int) -> Int {
-        if component == 0 {
-            return 25
-        }
-        else if component == 1 {
+        switch (component) {
+        case 1,3,5:
             return 1
-        }
-        else if component == 2 {
+        case 0:
+            return  25
+        case 2,4:
             return 60
+        default:
+            return 0
         }
-        else if component == 3 {
-            return 1
-        }
-        else if component == 4 {
-            return 60
-        }
-        else if component == 5 {
-            return 1
-        }
-        return 0
     }
-
 }
