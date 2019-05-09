@@ -1,12 +1,12 @@
 class DigitalTime {
 private let hours:DigitalHours
 private let minutes:DigitalMinutes
-private let seconds:Int
+private let seconds:DigitalSeconds
 
 init(hours:Int,minutes:Int,seconds:Int) {
     self.hours = DigitalHours(hours)
     self.minutes = DigitalMinutes(minutes)
-    self.seconds = seconds
+    self.seconds = DigitalSeconds.init(seconds)
 }
 
 func hoursValue() -> DigitalHours {
@@ -17,7 +17,7 @@ func minutesValue() -> DigitalMinutes {
     return minutes
 }
 
-func secondsValue() -> Int {
+func secondsValue() -> DigitalSeconds {
     return seconds
 }
 }
