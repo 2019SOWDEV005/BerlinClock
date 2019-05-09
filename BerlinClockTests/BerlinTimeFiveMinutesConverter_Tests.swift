@@ -90,4 +90,12 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
         
         XCTAssertEqual("YYRYYRYYRYY", result)
     }
+    
+    func test_OffAllLightsInFiveMinutesRow_WhenTwoMinutesReceived() {
+        let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(2)
+        
+        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        
+        XCTAssertEqual("OOOOOOOOOOO", result)
+    }
 }

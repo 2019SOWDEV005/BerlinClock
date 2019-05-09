@@ -12,6 +12,10 @@ class BerlinTimeFiveMinutesConverter {
     func asFiveMinutesRepresentation() -> String {
         var fiveMinutesRepresentation = ""
         
+        guard numberOfFiveMinutes > 0 else {
+            return  fiveMinutesRepresentation.padding(toLength: maximumNumberOfLights, withPad: lightOffRepresentation, startingAt: 0)
+        }
+        
         constructFiveMinutesRepresentation(&fiveMinutesRepresentation)
         
         return  fiveMinutesRepresentation.padding(toLength: maximumNumberOfLights, withPad: lightOffRepresentation, startingAt: 0)
