@@ -4,9 +4,10 @@ import XCTest
 class BerlinTimePresenter_Tests: XCTestCase {
     
     private var berlinTimePresenter:BerlinTimePresenter!
+    private var berlinTimeView:MockBerlinTimeView!
     
     override func setUp() {
-        let berlinTimeView = MockBerlinTimeView()
+        berlinTimeView = MockBerlinTimeView()
         
         berlinTimePresenter = BerlinTimePresenter(berlinTimeView)
     }
@@ -54,7 +55,7 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertEqual("02", result)
     }
-
+    
     func test_ReturnHR_WhenComponentOneReceived()  {
         let rowValue = 02
         
@@ -95,10 +96,29 @@ class BerlinTimePresenter_Tests: XCTestCase {
         
         XCTAssertEqual("Sec", result)
     }
+    
+    
+    func test_ShowValidDigitalTime_WhenUserSelectedTimeInPicker()  {
+        let digitalTime = DigitalTime(hours: 01, minutes: 02, seconds: 03)
+        
+        berlinTimePresenter.constructDigitalTime(digitalTime)
+        
+        XCTAssertEqual("01:02:03", berlinTimeView.getDigitalTime())
+    }
 }
 
 fileprivate class MockBerlinTimeView:BerlinTimeView {
+    
+    private var digitalTime:String?
+    
     func showDigitalTime(digitalTime: String) {
-        
+        self.digitalTime = digitalTime
+    }
+    
+    func getDigitalTime() -> String {
+        guard let digitalValue = digitalTime else {
+            return ""
+        }
+        return digitalValue
     }
 }

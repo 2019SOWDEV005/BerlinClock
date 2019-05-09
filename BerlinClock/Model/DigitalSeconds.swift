@@ -4,4 +4,8 @@ class DigitalSeconds {
     init(_ seconds:Int) {
         self.digitalSeconds = seconds
     }
+    
+    func value() -> Int {
+        return digitalSeconds
+    }
 }

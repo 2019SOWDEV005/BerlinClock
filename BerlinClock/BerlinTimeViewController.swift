@@ -25,7 +25,7 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
     }
     
     func showDigitalTime(digitalTime: String) {
-        
+        txtDigitalTime.text = digitalTime
     }
     
     private func createTimePicker() {
@@ -51,6 +51,8 @@ extension BerlinTimeViewController:UIPickerViewDelegate,UIPickerViewDataSource {
         
         digitalTime = DigitalTime.init(hours:selectedTimeValue , minutes: selectedMinutesValue,
                                        seconds: selectedSecondsValue)
+        
+        berlinTimePresenter.constructDigitalTime(digitalTime!)
         
      }
     

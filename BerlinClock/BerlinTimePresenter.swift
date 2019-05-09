@@ -36,4 +36,13 @@ class BerlinTimePresenter {
             return nil
         }
     }
+    
+    func constructDigitalTime(_ digitalTime:DigitalTime) {
+        let digitalHours = digitalTime.hoursValue()
+        let digitalMinutes = digitalTime.minutesValue()
+        let digitalSeconds = digitalTime.secondsValue()
+        
+        let digitalTime = String(format: "%02d:%02d:%02d",digitalHours.value(),digitalMinutes.value(),digitalSeconds.value())
+        berlinTimeView.showDigitalTime(digitalTime: digitalTime)
+    }
 }
