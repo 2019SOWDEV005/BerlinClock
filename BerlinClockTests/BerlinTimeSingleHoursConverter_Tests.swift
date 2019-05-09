@@ -6,7 +6,7 @@ class BerlinTimeSingleHoursConverter_Tests: XCTestCase {
     func test_BlinkOneRedLightInSingleHoursRow_WhenOneHourReceived() {
         let berlinTimeSingleHoursConverter = BerlinTimeSingleHoursConverter.init(DigitalHours.init(1))
         
-        let result = berlinTimeSingleHoursConverter.asSingleHoursRepresentation()
+        let result = berlinTimeSingleHoursConverter.asBerlinTime()
         
         XCTAssertEqual("ROOO", result)
     }
@@ -14,7 +14,7 @@ class BerlinTimeSingleHoursConverter_Tests: XCTestCase {
     func test_BlinkTwoRedLightsInSingleHoursRow_WhenTwoHoursReceived() {
         let berlinTimeSingleHoursConverter = BerlinTimeSingleHoursConverter.init(DigitalHours.init(2))
         
-        let result = berlinTimeSingleHoursConverter.asSingleHoursRepresentation()
+        let result = berlinTimeSingleHoursConverter.asBerlinTime()
         
         XCTAssertEqual("RROO", result)
     }
@@ -22,7 +22,7 @@ class BerlinTimeSingleHoursConverter_Tests: XCTestCase {
     func test_BlinkThreeRedLightsInSingleHoursRow_WhenThreeHoursReceived() {
         let berlinTimeSingleHoursConverter = BerlinTimeSingleHoursConverter.init(DigitalHours.init(3))
         
-        let result = berlinTimeSingleHoursConverter.asSingleHoursRepresentation()
+        let result = berlinTimeSingleHoursConverter.asBerlinTime()
         
         XCTAssertEqual("RRRO", result)
     }
@@ -30,7 +30,7 @@ class BerlinTimeSingleHoursConverter_Tests: XCTestCase {
     func test_BlinkFourRedLightsInSingleHoursRow_WhenFourHoursReceived() {
         let berlinTimeSingleHoursConverter = BerlinTimeSingleHoursConverter.init(DigitalHours.init(4))
         
-        let result = berlinTimeSingleHoursConverter.asSingleHoursRepresentation()
+        let result = berlinTimeSingleHoursConverter.asBerlinTime()
         
         XCTAssertEqual("RRRR", result)
     }
@@ -38,7 +38,7 @@ class BerlinTimeSingleHoursConverter_Tests: XCTestCase {
     func test_OffAllLightsInSingleHoursRow_WhenFiveHoursReceived() {
         let berlinTimeSingleHoursConverter = BerlinTimeSingleHoursConverter.init(DigitalHours.init(5))
         
-        let result = berlinTimeSingleHoursConverter.asSingleHoursRepresentation()
+        let result = berlinTimeSingleHoursConverter.asBerlinTime()
         
         XCTAssertEqual("OOOO", result)
     }

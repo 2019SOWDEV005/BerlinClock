@@ -7,7 +7,7 @@ class BerlinTimeSingleHoursConverter {
         self.numberOfSingleHours = digitalHours.numberOfSingleHoursValue()
     }
     
-    func asSingleHoursRepresentation() -> String {
+    func asBerlinTime() -> String {
         var  singleHoursRepresentation = ""
         
         singleHoursRepresentation = singleHoursRepresentation.padding(toLength: numberOfSingleHours, withPad: LightIndicator.asStringValue(.Red), startingAt: 0)
