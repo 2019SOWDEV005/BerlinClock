@@ -10,7 +10,7 @@ class BerlinTimeSecondsConverter {
         if isEvenSeconds(digitalSeconds) {
             return LightIndicator.asStringValue(.Yellow)
         }
-        return ""
+        return LightIndicator.asStringValue(.Off)
     }
     
     private func isEvenSeconds(_ seconds:DigitalSeconds) ->Bool {

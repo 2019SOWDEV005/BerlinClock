@@ -11,4 +11,11 @@ class BerlinTimeSecondsConverter_Tests: XCTestCase {
         XCTAssertEqual(LightIndicator.asStringValue(.Yellow), result)
     }
     
+    func test_OffLightInSecondsRow_WhenOddNumberOFSecondsReceived() {
+        let berlinTimeSecondsConverter = BerlinTimeSecondsConverter.init(DigitalSeconds(7))
+        
+        let result = berlinTimeSecondsConverter.asBerlinTime()
+        
+        XCTAssertEqual(LightIndicator.asStringValue(.Off), result)
+    }
 }
