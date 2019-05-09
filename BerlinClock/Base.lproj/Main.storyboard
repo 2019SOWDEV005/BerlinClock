@@ -56,9 +56,11 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lRs-ia-jId">
                                                 <rect key="frame" x="0.0" y="0.0" width="84.5" height="38.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="FiveHours"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhf-8U-ALV">
                                                 <rect key="frame" x="86.5" y="0.0" width="84" height="38.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="FiveHours"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vbH-wL-FiI">
                                                 <rect key="frame" x="172.5" y="0.0" width="84.5" height="38.5"/>
