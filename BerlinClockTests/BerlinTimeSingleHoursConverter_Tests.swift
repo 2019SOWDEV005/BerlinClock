@@ -18,4 +18,12 @@ class BerlinTimeSingleHoursConverter_Tests: XCTestCase {
         
         XCTAssertEqual("RROO", result)
     }
+    
+    func test_BlinkThreeRedLightsInSingleHoursRow_WhenThreeHoursReceived() {
+        let berlinTimeSingleHoursConverter = BerlinTimeSingleHoursConverter.init(DigitalHours.init(3))
+        
+        let result = berlinTimeSingleHoursConverter.asSingleHoursRepresentation()
+        
+        XCTAssertEqual("RRRO", result)
+    }
 }
