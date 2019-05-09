@@ -54,7 +54,7 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
         for i in (0...imageCollection.count - 1) {
             
             if characters[i] == redLightIndicator {
-                imageCollection[i].backgroundColor = UIColor.red
+                BlinkRedLight(imageCollection, i)
             }
                 
             else if characters[i] == yellowLightIndicator {
@@ -65,6 +65,12 @@ class BerlinTimeViewController: UIViewController, BerlinTimeView {
                 lightOffState(imageCollection, i)
             }
         }
+    }
+    
+    private func BlinkRedLight(_ imageCollection: [UIImageView], _ i: Int) {
+        imageCollection[i].backgroundColor = UIColor.red
+        
+        setBlackBorderForImageView(imageCollection, i)
     }
     
     private func BlinkYellowLight(_ imageCollection: [UIImageView], _ i: Int) {
