@@ -2,6 +2,7 @@ class BerlinTimeFiveMinutesConverter {
     private let numberOfFiveMinutes: Int
     private let maximumNumberOfLights = 11
     private let yellowLightRepresentation = "Y"
+    private let redLightRepresentation = "R"
     private let lightOffRepresentation = "O"
     
     init(_ digitalMinutes:Int) {
@@ -11,8 +12,20 @@ class BerlinTimeFiveMinutesConverter {
     func asFiveMinutesRepresentation() -> String {
         var fiveMinutesRepresentation = ""
         
-        fiveMinutesRepresentation = fiveMinutesRepresentation.padding(toLength: numberOfFiveMinutes, withPad:yellowLightRepresentation, startingAt: 0)
-
-            return  fiveMinutesRepresentation.padding(toLength: maximumNumberOfLights, withPad: lightOffRepresentation, startingAt: 0)
+        constructFiveMinutesRepresentation(&fiveMinutesRepresentation)
+        
+        return  fiveMinutesRepresentation.padding(toLength: maximumNumberOfLights, withPad: lightOffRepresentation, startingAt: 0)
+    }
+    
+    private func constructFiveMinutesRepresentation(_ berlinDigits: inout String) {
+        
+        for minute in 1...numberOfFiveMinutes {
+            if minute % 3 == 0 {
+                berlinDigits += redLightRepresentation
+            }
+            else {
+                berlinDigits += yellowLightRepresentation
+            }
         }
+    }
 }
