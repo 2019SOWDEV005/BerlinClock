@@ -34,4 +34,12 @@ class BerlinTimeFiveHoursConverter_Tests: XCTestCase {
         
         XCTAssertEqual("RRRR", result)
     }
+    
+    func test_OffAllLightsInFiveHoursRow_WhenZeroHoursReceived() {
+        let berlinTimeFiveHoursConverter = BerlinTimeFiveHoursConverter.init(DigitalHours.init(0))
+        
+        let result = berlinTimeFiveHoursConverter.asBerlinTime()
+        
+        XCTAssertEqual("OOOO", result)
+    }
 }
