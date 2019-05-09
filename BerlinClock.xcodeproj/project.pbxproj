@@ -107,7 +107,7 @@
 				36903C522284640000334F48 /* Assets.xcassets */,
 				36903C542284640000334F48 /* LaunchScreen.storyboard */,
 				36903C572284640000334F48 /* Info.plist */,
-				36903C7B228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift */,
+				36903C7F22846E1000334F48 /* Model */,
 			);
 			path = BerlinClock;
 			sourceTree = "<group>";
@@ -129,6 +129,14 @@
 				36903C6D2284640100334F48 /* Info.plist */,
 			);
 			path = BerlinClockUITests;
+			sourceTree = "<group>";
+		};
+		36903C7F22846E1000334F48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36903C7B228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
