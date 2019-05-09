@@ -5,7 +5,12 @@ class BerlinTimeViewController: UIViewController {
     @IBOutlet weak var txtDigitalTime: UITextField!
     
     private var berlinTimePresenter:BerlinTimePresenter!
-    
+ 
+    @IBOutlet var fiveHoursLights: [UIImageView]!
+    @IBOutlet var secondsLight: [UIImageView]!
+    @IBOutlet var singleHoursLights: [UIImageView]!
+    @IBOutlet var fiveMinutesLights: [UIImageView]!
+    @IBOutlet var singleMinutesLights: [UIImageView]!
     override func viewDidLoad() {
         super.viewDidLoad()
         
