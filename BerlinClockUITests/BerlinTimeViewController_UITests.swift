@@ -1,6 +1,6 @@
 import XCTest
 
-class BerlinClockUITests: XCTestCase {
+class BerlinTimeViewController_UITests: XCTestCase {
 
     override func setUp() {
         continueAfterFailure = false
