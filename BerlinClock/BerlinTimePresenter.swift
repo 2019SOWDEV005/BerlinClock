@@ -21,6 +21,8 @@ class BerlinTimePresenter {
             return "HR"
         case 3:
             return "Min"
+        case 5:
+            return "Sec"
         default:
             return nil
         }
