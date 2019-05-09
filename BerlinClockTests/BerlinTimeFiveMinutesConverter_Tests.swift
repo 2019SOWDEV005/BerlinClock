@@ -58,4 +58,12 @@ class BerlinTimeFiveMinutesConverter_Tests: XCTestCase {
         
         XCTAssertEqual("YYRYYRYOOOO", result)
     }
+    
+    func test_BlinkSixYellowLightsAndTwoRedLightsInFiveMinutesRow_WhenFourtyMinutesReceived() {
+        let berlinTimeFiveMinutesConverter = BerlinTimeFiveMinutesConverter.init(40)
+        
+        let result = berlinTimeFiveMinutesConverter.asFiveMinutesRepresentation()
+        
+        XCTAssertEqual("YYRYYRYYOOO", result)
+    }
 }
