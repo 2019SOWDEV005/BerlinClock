@@ -46,5 +46,5 @@ select the date in the picker View
 # Screenshot
 
 <p align="center">
-<img src="https://github.com/2019SOWDEV005/BerlinClock/tree/master/Screenshot"/>
+<img src="https://github.com/2019SOWDEV005/BerlinClock/tree/master/Screenshot/BerlinClock.png"/>
 </p>
