@@ -11,7 +11,6 @@
 		36903C512284640000334F48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36903C4F2284640000334F48 /* Main.storyboard */; };
 		36903C532284640000334F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36903C522284640000334F48 /* Assets.xcassets */; };
 		36903C562284640000334F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36903C542284640000334F48 /* LaunchScreen.storyboard */; };
-		36903C612284640100334F48 /* BerlinClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C602284640100334F48 /* BerlinClockTests.swift */; };
 		36903C6C2284640100334F48 /* BerlinTimeViewController_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C6B2284640100334F48 /* BerlinTimeViewController_UITests.swift */; };
 		36903C7A2284649800334F48 /* BerlinTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C792284649800334F48 /* BerlinTimeViewController.swift */; };
 		36903C7C228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36903C7B228466F400334F48 /* BerlinTimeSingleMinutesConverter.swift */; };
@@ -59,7 +58,6 @@
 		36903C552284640000334F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36903C572284640000334F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36903C5C2284640100334F48 /* BerlinClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BerlinClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36903C602284640100334F48 /* BerlinClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockTests.swift; sourceTree = "<group>"; };
 		36903C622284640100334F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36903C672284640100334F48 /* BerlinClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BerlinClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36903C6B2284640100334F48 /* BerlinTimeViewController_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinTimeViewController_UITests.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				36903C8D228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift */,
 				36903C9122848C8B00334F48 /* BerlinTimeFiveHoursConverter_Tests.swift */,
 				36903CA12284DB5200334F48 /* BerlinTimeSecondsConverter_Tests.swift */,
-				36903C602284640100334F48 /* BerlinClockTests.swift */,
 				36903C622284640100334F48 /* Info.plist */,
 				36903C972284A83500334F48 /* BerlinTimePresenter_Tests.swift */,
 			);
@@ -375,7 +372,6 @@
 				36903C8E228482B800334F48 /* BerlinTimeSingleHoursConverter_Tests.swift in Sources */,
 				36903C982284A83500334F48 /* BerlinTimePresenter_Tests.swift in Sources */,
 				36903CA22284DB5200334F48 /* BerlinTimeSecondsConverter_Tests.swift in Sources */,
-				36903C612284640100334F48 /* BerlinClockTests.swift in Sources */,
 				36903C7E2284676A00334F48 /* BerlinTimeSingleMinutesConverter_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
