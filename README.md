@@ -42,6 +42,7 @@ Deployment Target - 12.1
 2. The user need to tap the textBox to provide Digital input . Once the user selects the textBox the User have an option to 
 select the date in the picker View
 3.The user can selects time and click on done button on the left side of the pickerview.
+
 4. Finally Click on Show BerlinTime option the BerlinClock Will be displayed with corresponding colored lights
 
 # Screenshot
