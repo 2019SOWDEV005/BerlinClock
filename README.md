@@ -16,7 +16,7 @@ Feature 1 - Converting Digital Time to Berlin Time
               -> Implementation completed
               
 Feature 2 - Converting Berlin Time to Digital Time
-              -> I have spent  few hours to complete the kata but within that time this feature not able to covered but this is definitely doable one
+              ->with in the time it is very dificult to do feature 2 This can be definitely completed if given some more time.
 
 # Development Environment
 
@@ -51,5 +51,5 @@ select the date in the picker View
 </p>
 
 note:
- In the textField the User can able to enter  N number of digits and character if they are running in the simulator and typing with keyboard. 
+ In the textField the User can to enter  N number of digits and character if they are running in the simulator and typing with keyboard. 
 There is no validation for this case because This is not valid scenario if we are running in the device. the user does not have any keyboard option to enter invalid data.
