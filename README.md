@@ -13,10 +13,10 @@ The final two rows represent the minutes. The upper row represents 5 minute bloc
 This kata contains Two Feature
 
 Feature 1 - Converting Digital Time to Berlin Time
-              Implementation completed
+              -> Implementation completed
               
 Feature 2 - Converting Berlin Time to Digital Time
-              I have spent  few hours to complete the kata but within that time this feature cannot be covered but this is definitely doable one
+              -> I have spent  few hours to complete the kata but within that time this feature not able to covered but this is definitely doable one
 
 # Development Environment
 
@@ -29,22 +29,27 @@ Deployment Target - 12.1
 1. The project is been designed with MVP pattern.
 2. Presenter and Model is been unit tested and View controller is been UI tested
 
-3.The Project has the following Folder structure
-1)ViewController
-2)Presenter
-3)Model
-4)Helpers
-5)Constants
+# Folder Structure
+1. ViewController
+2. Presenter
+3. Model
+4. Helpers
+5. Constants
 
 # How to run 
 
 1. The app can be run with Xcode in simulator. (preferrably iphone 10 simulator)
 2. The user need to tap the textBox to provide Digital input . Once the user selects the textBox the User have an option to 
 select the date in the picker View
-3.The user can select time and click on Show BerlinTime option the BerlinClock Will be displayed with corresponding colored lights
+3.The user can selects time and click on done button on the left side of the pickerview.
+4. Finally Click on Show BerlinTime option the BerlinClock Will be displayed with corresponding colored lights
 
 # Screenshot
 
 <p align="center">
 <img src="https://github.com/2019SOWDEV005/BerlinClock/tree/master/Screenshot/BerlinClock.png"/>
 </p>
+
+note:
+ In the textField the User can able to enter  N number of digits and character if they are running in the simulator and typing with keyboard. 
+There is no validation for this case because This is not valid scenario if we are running in the device. the user does not have any keyboard option to enter invalid data.
